@@ -220,11 +220,10 @@ const HomePage: React.FC = () => {
       <div className="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center lg:space-x-8">
         {/* Left Side - Image */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-          <Image
+          <img
             src={urlFor(currentProducts[0]?.image).width(800).height(600).quality(80).url()} // Fetch high-quality image from Sanity
             alt={currentProducts[0]?.title || "Product Image"}
-            height={40}
-              width={40}
+           
             className="w-full h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
           />
         </div>
@@ -291,11 +290,10 @@ const HomePage: React.FC = () => {
               onClick={() => handleAddToCart(currentProducts[0]!, quantity)} // Pass quantity to add to cart
               className="bg-[#029FAE] text-white py-2 px-4 rounded-full shadow-md flex items-center justify-center hover:bg-[#027a8b] transition-colors duration-300"
             >
-              <Image
+              <img
                 src="https://cdn-icons-png.flaticon.com/128/2543/2543369.png"
                 alt="Add to Cart"
-                height={40}
-              width={40}
+              
                 className="h-5 w-5 mr-2"
               />
               Add to Cart
@@ -348,11 +346,10 @@ const HomePage: React.FC = () => {
               key={product._id}
               className="border p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full bg-white"
             >
-              <Image
+              <img
                 src={urlFor(product.image).width(500).url()} // Generate image URL for product
                 alt={product.title}
-                height={40}
-              width={40}
+               
                 className="w-full h-48 object-cover mb-4 rounded-lg"
               />
               <div className="mx-2">
