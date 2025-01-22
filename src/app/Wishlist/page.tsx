@@ -38,8 +38,7 @@ const WishlistPage: React.FC = () => {
                 key={item.id}
                 className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 border-b pb-4"
               >
-                <Image src={item.image} alt={item.title} height={40}
-              width={40} className="w-20 h-20" />
+                <img src={item.image} alt={item.title}  className="w-20 h-20" />
                 <div className="flex-1 ml-4">
                   <p className="text-lg font-semibold">{item.title}</p>
                   <div className="mt-4 sm:mt-0 flex items-center gap-6 w-full sm:w-auto justify-between sm:justify-end">
